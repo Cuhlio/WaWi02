@@ -34,7 +34,6 @@ public class TestRechnung04{
 		// Vererbungsbeziehung?
 		assertTrue("Eine Rechnung IST ein Geschaeftsobjekt! Auf korrekte Vererbung achten!", Rechnung.class.getSuperclass().equals(Geschaeftsobjekt.class));
 
-		assertFalse("Das Setzen des Rechnungsstatus ueber einen Setter ist nicht erlaubt!", hasSetterForType(Rechnung.class, Rechnungsstatus.class));
 		assertFalse("Das Setzen eines neuen Kunden ueber einen Setter ist nicht erlaubt!", hasSetterForType(Rechnung.class, Kunde.class));
 
 		int nr = new Rechnung().getNummer();

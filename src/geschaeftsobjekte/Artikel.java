@@ -25,6 +25,7 @@ package geschaeftsobjekte;
     }
     
     
+    
  
     //Lagermethoden! (Instanzmethode)
     public int einlagern(int lagerZugang){
