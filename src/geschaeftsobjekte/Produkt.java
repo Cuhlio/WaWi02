@@ -5,12 +5,15 @@ public abstract class Produkt extends Geschaeftsobjekt implements Comparable<Pro
 	
 	public String bezeichnung;
 	public double preis;
+	private String einheit;
 
 	public Produkt(int id, String bezeichnung, double preis){
 		super(id); //super, da von Superklasse übernommen wird
 		this.bezeichnung = bezeichnung;
 		this.preis = preis;
 	}
+	
+	
 	
 	public int getNr(){
 		return super.getNummer();
@@ -19,6 +22,10 @@ public abstract class Produkt extends Geschaeftsobjekt implements Comparable<Pro
 	public String getBezeichnung(){
 		
 		return bezeichnung;
+	}
+	
+	public String getEinheit(){
+		return einheit;
 	}
 	
 	public double getPreis(){
@@ -46,9 +53,12 @@ public abstract class Produkt extends Geschaeftsobjekt implements Comparable<Pro
 	}
 	return false;
 	}
-	
+
 	
 	}
+	
+	
+	
 
 
 
